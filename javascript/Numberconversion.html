@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+         1.Number(only_AnyType_nos)==>convert into ===>pure no
+              eg:Number("100")==>100
+                 Number("120.29")==>120
+                 Number("sai12")==>NaN
+                 Number("12sai")==>NaN
+        2.parseInt(only_AnyType_nos)==>convert into ===>integer
+          parseInt(digits+alphates)==>convert into ===>integer
+            eg:parseInt("100")==>100
+               parseInt("120.29")==>120
+               parseInt("sai12")==>NaN
+               parseInt("12sai")==>12
+         
+        3.simillary: convert into ===>float
+           parseFloat('........')
+
+
+     -->
+     <script>    //convert into pure no
+                 console.log(Number("100"))//==>100
+                 console.log(Number("120.29"))//==>120.29
+                 console.log(Number("sai12"))//==>NaN
+                 console.log(Number("12sai"))//==>NaN
+                //convert into integer
+                 console.log(parseInt("100"))//==>100
+                 console.log(parseInt("120.29"))//==>120
+                 console.log(parseInt("sai12"))//==>NaN
+                 console.log(parseInt("12sai"))//==>12
+                //convert into float
+                 console.log(parseFloat("1002000"))//==>100
+                 console.log(parseFloat("12029"))//==>120
+                 console.log(parseFloat("sai12"))//==>NaN
+                 console.log(parseFloat("12sai"))//==>12
+
+
+     </script>
+</body>
+</html>

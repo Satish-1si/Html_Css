@@ -1,0 +1,17 @@
+/* group selector */
+div{
+    background-color:red;
+}
+/* tag selector */
+h1{
+    color:blue;
+}
+/* class selector */
+.data{
+   background-color:aqua;
+   color:brown'
+}
+#abc{
+    background-color:blue;
+    color:black
+}

@@ -1,0 +1,54 @@
+css ==>cascading style sheet
+0.html==>structure
+1.css ==>design the structure
+
+
+1.selector===>3types 
+         #inline selector -->tag lo rasthamu
+         #internal selector -->head lo rasthamu
+         #external selector --->external document lo rasthamu 
+====================================================================================================
+#inline selector:-
+       eg:<h1 style="property:value;property:value">
+             satish
+         </h1>
+====================================================================================================
+#internal selector:-
+      eg:<head>
+              <style>
+                     h1{
+                         color:red;
+                         backroundcolor:black;
+                     }
+                     p{
+                         color:blue;
+                         backroundcolor:black;
+                         margin:10px;
+                     }
+              </style>
+          </head>
+====================================================================================================
+#external_css:
+#code.html:-
+           <html>
+               <head>
+                  <link rel="stylesheet" href="code.css"> 
+               </head>
+               <body>
+                  <h1>sai</h1>
+               </body>
+             </html>
+----------------------------------------------------------------------------------------------------------------
+ # code.css   
+           .class{
+               color:blue;
+               backround-color:black;
+               margin:10px;
+            }
+
+====================================================================================================
+selector priroty :-
+1.inline css (***)
+2.internal css (**)
+3.external css (*)
+====================================================================================================

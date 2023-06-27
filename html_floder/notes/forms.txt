@@ -1,0 +1,18 @@
+1.forms:- 
+     
+1.create forms:-  <form attribtes="value">  </form>
+
+#attributes:-3types use chesamu mainly 
+-----------------------------------------------------------------------------------------------------
+1.action="server url"
+Note:-user submit btn meeda click chesinapudu ==>manaaa form yaa location ki vallali anadi cheputhudi
+------------------------------------------------------------------------------------------------------
+2.method="Get/post"
+Note:1.Get use chestha:1.server ki mana_form_data ==>gmail url link add  avi vellathidi
+                     2.ela form_url_link ki mana data add avthunapudu==>data show avuthudi(security problems vasthayi get valla)
+     2.post use chestha:1.server ki mana_form_data ==>gmail url link add  avi vellathidi ==>but mana data url_link ki add avinapudu hide avuthudi.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+3.target="_blank/_self"==>click chesinapudu result akkada open avalli anadi this type of attribute tho cheputhamu.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                        

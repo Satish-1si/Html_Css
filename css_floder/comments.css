@@ -1,0 +1,13 @@
+/* this is css comments */
+p{
+  color:red;
+  background-color: aqua;
+}
+/* 
+1.cssfile==>ruleset===>selector,declarationblock,property:value;
+    eg:
+    p{propert:value;propert:value;}==>ruleset
+    1.p,h1,h2,img,table,id,.class,etc....===>selector 
+    2.property==>color,height,etc....
+    3.value==>red,100vh,etc....
+ */
