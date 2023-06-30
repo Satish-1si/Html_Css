@@ -1,6 +1,7 @@
 1.forms:- 
      
-1.create forms:-  <form attribtes="value">  </form>
+1.create forms:- 
+    syntax:- <form attribtes="value"> data </form>
 
 #attributes:-3types use chesamu mainly 
 -----------------------------------------------------------------------------------------------------
@@ -14,5 +15,32 @@ Note:1.Get use chestha:1.server ki mana_form_data ==>gmail url link add  avi vel
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 3.target="_blank/_self"==>click chesinapudu result akkada open avalli anadi this type of attribute tho cheputhamu.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#form data:-
+            1. input Element 
+                      #attribte: type="value"
+                      #value_types:-
+                                1.checkbox ,Radio ===>mini_buttons
+                                2.submit,reset,button ==>long_buttons
+                                3.tel,number ===>no data
+                                4.color,range,file,url===>choose from user
+                                5.Date,time,week,month,DateTime,DatetimeLocal ===>Date
+                                6.text,password ===>textdata
+                                7.email ===>take email
+            2. textarea Element:- 
+                          #attribte: 1.cols="no"   2.rows="no" 
+                          Note:- cols==>denotes width of textarea box
+                                 rows===>denotes height of textarea box
+            3. selection Element:-
+                   <select>
+                     <option> data123</option>
+                     <option> data12</option>
+                     <option> data1</option> 
+                     <option> data0</option> 
+                     <option> data-1</option>
+                   </select>
+            4. button Element:
+                       <button type="button">click it</button>
+                       <button type="submit">submit</button
 
-                        
+  
+#four tags ki common attribute okkati vundi:- unique ga tag ni identify cheyadaniki ==> name="unique name"       

@@ -1,0 +1,85 @@
+#attributes:-
+           1.id =unique
+           2.class => duplicate
+           3.name (used in forms)=>duplicate
+           4.tagname =>duplicate
+5.classList ==>collection of tags ===>[tag,tag,tag]
+
+
+
+
+===================================================================================================================
+In JavaScript, you can interact with HTML elements through the HTML Document Object Model (DOM). The DOM provides a set of methods and properties to access and manipulate HTML elements dynamically. Here are some common operations you can perform on HTML elements using JavaScript and the DOM:
+
+1. Accessing Elements 
+   *  let element    = document.getElementById("id")             : Retrieves an element by its unique ID attribute.
+   *  let collection = document.getElementsByClassName("class")  : Retrieves a collection of elements by their class name.
+   *  let collection = document.getElementsByTagName("tagname")  : Retrieves a collection of elements by their tag name.
+   *  let element    = document.querySelector("css selector")    : Retrieves the first element that matches a specific CSS selector.
+   *  let collection = document.querySelectorAll("css selector") : Retrieves all elements that match a specific CSS selector.
+.......................................................................................................................................................................................................................................................................................................................
+2. Modifying Content and Attributes:
+     * element.innerHTML                         : Gets the HTML_tag 
+       element.innerHTML="<h1>sai</h1>"          : sets the HTML_tag 
+
+     * element.innerText                         : Gets  the HTML_content within an element.
+       element.innerText="sai"                   : sets the HTML_content within an element.
+
+     * element.textContent                       : Gets or sets the text content within an element.
+       element.textContent="sai"                 : sets the HTML_content within an element.
+
+     * element.setAttribute('attribute', 'value'): Sets the value of an attribute for an element.
+     * element.getAttribute('attribute')         : Retrieves the value of an attribute for an element.
+.......................................................................................................................................................................................................................................................................................................................
+     
+3. Manipulating Style and CSS Classes:
+     * element.classList.add('selector_class')   : Adds a CSS_class to an element.
+     * element.classList.remove('selector_class'): Removes a CSS_class from an element.
+     
+     * element.style.property="value"            : Gets  the value of a CSS property for an element.
+     * element.style.property="value"            : sets the value of a CSS property for an element.
+.......................................................................................................................................................................................................................................................................................................................
+4. Creating and Modifying Elements:
+   * document.createElement('tag') : Creates a new HTML element.
+-----------------------------------------------------------------------------------------------
+   * parentelement.appendChild(childElement): Appends => [child_element] to another element.
+   * parentelement.append(childElement,childElement1,childElement2,...): Appends => [multiple_child_element] to another element.
+
+     eg: var parentElement = document.getElementById('parentElement');
+         var childElement  = document.createElement('div');
+             parentElement.appendChild(childElement);
+----------------------------------------------------------------------------------------------
+   * element.remove(): This method removes the element itself from the DOM. It is called directly on the element that you want to remove. For example:
+     
+     eg: var elementToRemove = document.getElementById('elementToRemove');
+         elementToRemove.remove();
+
+---------------------------------------------------------------------------------------------
+   * parentelement.removeChild(childElement)   : Removes a child element from its parent.
+
+     eg: var parentElement = document.getElementById('parentElement');
+         var childElement  = document.getElementById('childElement');
+             parentElement.removeChild(childElement);
+------------------------------------------------------------------------------------------------------
+   * parentElement.insertBefore(newElement, referenceElement);
+     var parentElement    = document.getElementById('parentElement');
+     var newElement       = document.createElement('div');
+     var referenceElement = document.getElementById('referenceElement');
+         parentElement.insertBefore(newElement, referenceElement);
+----------------------------------------------------------------------------------------------------------
+   * element.cloneNode(deep) : Creates a copy of an element.
+
+     eg: var originalElement = document.getElementById('originalElement');
+         var clonedElement   = originalElement.cloneNode(true); // Cloning the element 
+------------------------------------------------------------------------------------------------------------------------
+   * To replace an element in the DOM with another element, you can use the following steps:
+    
+    eg:var newElement = document.createElement('div');
+           newElement.textContent = 'New Content';
+       var existingElement = document.getElementById('existingElementId');
+       existingElement.replaceWith(newElement);
+........................................................................................................................................................................................
+5. Handling Events:
+   * .addEventListener   : Attaches an event listener to an element.
+   * .removeEventListener: Removes an event listener from an elemen* .
+These are just a few examples of the operations you can perform with JavaScript and the DOM. The DOM provides a rich set of methods and properties to interact with HTML elements, allowing you to create dynamic and interactive web applications.

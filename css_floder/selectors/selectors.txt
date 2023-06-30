@@ -1,6 +1,0 @@
-selectors==>using selectors to apply the styles
-#types of selectors and prioties:-
-                1.id selector :-#idname(***)
-                2.class selector:- .classname(**)
-                3.group selector:- div,body,...(*)
-                4.tag selector:-h1,p,img,...(****)

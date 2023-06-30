@@ -1,0 +1,270 @@
+1.varible decalration:-
+               *let            *var          *const
+----------------------------------------------------------------
+ [scope]         block          global         block 
+ ---------------------------------------------------------------
+ [update]        ok             ok             not_ok
+ ----------------------------------------------------------------
+ [redec_var]     not_ok         ok             not_ok
+ ----------------------------------------------------------------
+ [varble_ins]    later          later          immefiatly
+ ----------------------------------------------------------------
+=================================================================================================================================
+2.conversion:-
+              typeof(),
+              Boolean(),
+              Number(any_no),
+              parseInt(no_alpha,no),
+              parseFlaot(no_alpha,no)
+=================================================================================================================================
+3. 
+#arthimatic operators:-
+                      +,-,*,**,/,%
+
+#comparision operartor:-
+                    == --->losse equal(data ==>checking)
+                    === --->strict equal(data_type,data ==> checking,)
+                    != -->loose not equal
+                    !== -->strict not equal
+
+# logical operators :-
+                     &&,||,! 
+#other operators:-
+1.comma opertor==>return last-first value
+
+2.spread operator:-unpack the values
+eg:- varible="data"
+...varible=> data present in varible ==>that time values ni upack cheyadaniki==>spread operator 
+
+3.rest operator:-pack(group) the values
+eg:- varible ;
+...varible=> data not present in varible ==>that time values ni store cheyadaniki==>Rest operator
+
+4.destructing:sequence of individual value to load in same varible| another_varible
+eg: object ===>same key| another_key:{same_key}
+    list ===>another_key 
+  
+
+ =================================================================================================================================                    
+4.string+no ==>logics:-
+                String+no==>string concat
+                no+string==>string concat
+                no-string===>no
+=================================================================================================================================
+5.trusly vs falsy:-
+        1.trusly:-primitive/non primitive  datatypes :-  
+                                                       *string     *array 
+                                                       *boolean    *object
+                                                       *number     *set 
+                                                       *true       *function 
+                
+        2.falsy:other datatypes:-
+                                   *false 
+                                   *0 
+                                   *""
+                                   *-1
+                                   *null
+                                   *undefined
+                                   *0n
+ Note:-                                
+        (trusly)||(falsly) ==>true;
+        (trusly)&&(falsly)==>false;
+=================================================================================================================================
+7.DataTypes:-
+a)primitive_datatypes:-
+                    1.boolean
+                    2.number
+                    3.String
+
+b)non_primitive_datatypes:-
+                  1.array
+                  2.Object
+                  3.function
+                  4.set
+                  5.Map 
+c)other datype:-
+             1.null
+             2.undefined
+             3.NaN
+
+=================================================================================================================================
+8.math operations:-
+
+#sign return:
+1.Math.sign(no)==>+ 
+  Math.sign(-no)==>-
+  Math.sign(other)==>NaN
+
+#return positive no
+2.Math.abc(no)==>+no
+  Math.abc(-no)==>+no
+  Math.abc(other)==>NaN 
+
+#return sqrt of no
+3.Math.sqrt(no)=>square the no
+
+#return power_of_no
+4.Math.pow(base,power)==>base**power
+
+#return min_(no)
+5.Math.min(1,2,3,4,5)==>1
+
+#return max_(no)
+6.Math.max(1,2,3,4,5)===>5
+
+#return float_no
+7.Math.random() ==>generate ===>0.1 - 0.9
+
+#return integer_part
+8.Math.trunc(float_no) ==> before_part value
+
+#return over_round_off_interger value
+9.Math.ceil(float_no)==> over_round_off_interger value
+
+#return interger_value
+10.Math.round(float_no)==>integer_part
+   Math.floor(float_no)==>integer_part
+Rules: (float_no_decimal) < (0.4)=>integer_part
+       (float_no_decimal) > (0.4)=>integer_part+1
+  
+=========================================================================================================
+1.strings methods:
+          *  "string".charAt(Index);
+            
+          *  "string".IndexOf("string"|"char");
+          *  "string".lastIndexOf("string"|"char");
+          
+          *  "string".toupperCase();
+          *  "string".toLowerCase();
+         
+          *  "string".startsWith("string");
+          *  "string".endsWith("string");
+          
+          *  "string".slice(no); ==> a[no:]    |  "string".subString(no); ==> a[no:]
+          *  "string".slice(no,no); ==> a[no:no-1] | "string".subString(no,no); ==> a[no:no-1]
+          *  "string".substr(start_index,yani_char_kavalli);
+          
+          *  "string".concat("string","string",...)
+          *  "string".repeat(no)
+          *  "string".replace("oldString","newString")
+          
+          *  "string".split(arg);
+          
+          *  "string".trim()
+          *  "string".trimStart()
+          *  "string".trimEnd()
+          
+          *  "string".padStart(yeni_times_add,"string")
+          *  "string".padEnd(yeni_times_add,"string")
+
+          *   Anydatype.toString();==>convert into literal_string
+          *   Anydatype.valueOf();==>convert into primitive_value
+
+          *   "string".includes("search_str");
+
+          *  "string".length
+          *  "string"[Index]
+
+          *stringTemplate ==>`......${varible}.....${varible}....${varible}...`
+
+          *delete opertions==>string lo vundavu
+=========================================================================================================
+#functions_creation :-
+        1.named function:-declare the function with name
+            function data(){ return "satish";}
+            data();
+        
+        2.function expression:-anomoyos function to assign the varible==>called function expression
+            let function=function (){return "satish";}
+            function();
+        3.anonymous function:-no name 
+          let function=function (){return "satish";}
+          function();
+          Note:anomoyos function ni kachitam gaa okka varible assign cheyalli
+    
+#arguments:-
+        1.multiple arguments :-
+                               function data(a,b,c,){---}
+        
+        2.default arguments  :-
+                               function data(a=10,b=true,c){----}
+        
+        3.arguments keyword  :-
+                               function data(Dont_put){console.log(arguments)}
+        Note:-arguments keyword ==>arguments ==>stored in list
+        eg:[arg,arg1,arg2,arg3]
+        
+        4.Rest operator :-
+                        function data(a,b,...arg){}
+        Note:-Rest operator:-pack the  varibles || arguments ==>in single list
+        eg:-[arg,arg1,arg2]
+        5.list destructing:-
+                        function data([a,b,...arg]){}
+        Note:pass the list ===> destructing the list 
+-----------------------------------------------------------------------------------------
+# array_function:-
+* let single_line = () =>"satish is good software developer"
+
+* let single_line = (arg)=>"satish is good software developer"
+
+* let single_line = (arg1,arg2,..) =>arg*arg2;
+
+* let multip_line  =(arg,arg2,..){
+    -----------------------
+    -----------------------
+    -----------------------
+    -----------------------
+ }
+ -------------------------------------------------------------------------------------------
+ #iife function:-immediatly invoking function excution:-
+
+=======================================================================================================
+#objects:-
+
+1.object creation:-
+    1.{} ----------->object literal
+    2.new Object()----------->object constructor
+    3.constructor function:-automatically return creted_object
+    eg:-function user_data(a,b,c){
+        this.name=a
+        this.age=b
+        this.gender=c
+       }
+    let object=new user_data("sai",24,"male");
+    4.factory function:-produces the objects & returns 
+    eg:-function user_data(a,b,c){
+         return{
+          name:a,age:b,gender:c;
+         }
+       }
+       let object=new user_data("sai",24,"male");
+    5.using class:-
+
+------------------------------------------------------------------------------------------------------------
+2.add the keys & values
+ let add_values={
+     first_name:"sai",
+     age:24
+ }
+-----------------------------------------------------------------------------------------------------------
+* dot notation ===>accepts ===>1.valid varible names.====>eg:-add_values.first_name
+* bracket notation ===>accepts ===>1.valid varible names ====>eg:-add_values["first_name"]
+                                   2.invalid varible name
+3.accessing/update/modify/delete:- varible (keys):-1.dot notation
+                                                   2.bracket notation 
+          1.accessing:-
+              console.log(add_values.first_name)
+              console.log(add_values["first_name"])
+          2.updating:-
+              add_values.first_name="satish manepalli";
+              add_values["first_name"]="prasad manepalli";
+          3.Delete:-
+              Delete add_values.first_name
+              Delete add_values[first_name]
+ 
+Note:-Rules of valid varible name:-
+    1.starts with ===>[$,_,letters]
+    2.in between spaces vundakudadu
+    3.cant start with nos 
+--------------------------------------------------------------------------------------------------------------------
+

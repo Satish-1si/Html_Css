@@ -1,0 +1,9 @@
+.adding{
+    color:rgb(243, 241, 241);
+    font-size: 30px;
+    background-color: bisque;
+    font-weight: bold;
+}
+*{
+    background-color: cadetblue;
+}

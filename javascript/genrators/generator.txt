@@ -1,0 +1,4 @@
+*function ==>keyword==>represents generator function
+ yeild ==>is a operators ==>it can helps the generatorFunction 
+ yeild ==> by taking ==>values and return that values in the function
+ yeild==>return multiple valus

@@ -1,0 +1,61 @@
+#specipicity:-
+1.id>class>tag
+
+#inheritence:-
+1.parenet tag styles===>child tags ki==> apply avuthayi.
+2.child tags ki styles ==> parent styles apply avavu
+#universal selector:apply style entire document
+1.*selector{}
+=====================================================================
+
+
+
+selectors==>using selectors to apply the styles
+===================simple selectors===============================================
+1. *        ==>apply entire document ==>universeral selector
+2. tagname  ===>particular tag names ki ===>apply avuthudi
+3. classname===>particular class_names ki ===>apply avuthudi
+4.tagname,attribute==>particular selector_names ki ===>group selector apply avuthudi
+============================combined selectors=======================================
+1.parent tag lo vunnna ===>direct_child,indirect_child ===(appply avuthudi)
+  syntax:- parent_tag  Direct_childtag{
+                property:value;
+            }
+  syntax:- parent_tag  indirect_childtag{
+                property:value;
+            }
+2.parent tag lo vunnna ===>direct_child ===(appply avuthudi)
+syntax:- parent_tag>Direct_childtag{
+                property:value;
+            }
+3.particular tag tharuvatha immediate ga vanaa ===> manam select chesukunaa ==>tag ki apply avalli antaa
+syntax:- particular_tag+choose_tag{
+                property:value;
+            }
+4.particular tag tharuvatha immediate ga vanaa ===> manam select chesukunaa ==>all tags ki apply avalli antaa
+syntax:- particular_tag~choose_tag{
+                property:value;
+            }
+====================================pesudo selector============================================
+1. selector::first-letter{property:value;}
+2. selector::first-line{property:value;}
+3. selector::before{content:"is a good boy,property:value;}
+4. selector::after{content:"sai is a good,property:value; }
+5. selector::selection{property:value;property:value;property:value }
+Note:
+ selector:h1,img,p,etc.....
+ ==============================attribute selector=================================================
+particular tag lo===>particular attribute vunna tag style apply avuthundi
+1.selector[attribute]   ===>tag lo vanna == attribute match avalli
+2.selector[attribute="value"]===>tag lo vanna ==> attribute_value extact_match===> avalli
+
+3.selector[attribute*="value"]===>tag lo vanna ==> attribute_value seque ga akkada avinna match ==>avalli
+eg:-p[calass="para"]{}
+    eg:<h1 class="para">data</h1> ----------->extract_match value
+       <h1 class="ghpparagraph">data</h1> ----------->sub_match value
+4.selector[attribute$="value"]===>tag lo vanna ==> attribute_value last lo end==>avalli
+5.selector[attribute^="value"]===>tag lo vanna ==> attribute_value first lo start==>avalli
+
+====================================================================================================================
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body id="abc">
+      
+     <!-- 
+        1.string+no==>stringconcat    ,string+no+no=stringconcat
+        2.no+string==>stringconcat   ,no+no+string=stringconcat
+        3.no-string_no==>no
+        4.no-string_alp==>NaN
+        5.true==>1 ===>(True+10==>11)
+        6.false==>0===>(False+10=10)
+
+     -->
+    
+     <script>
+        let no=10;
+        let str_alp="sai"
+        let str_no="100"
+    
+        function data(arg){
+         let create_ele=document.createElement("h5");
+             create_ele.textContent=arg;
+         let get_ele=document.getElementById("abc");
+         get_ele.appendChild(create_ele);
+        }
+        data(no+str_no)//20
+        data(str_no+no)//1010
+        data(no-str_no)//10
+        data(no-str_alp)//NaN 
+        data(true+10)//11
+        data(false+10)//10
+        
+      
+     </script>
+</body>
+</html>
