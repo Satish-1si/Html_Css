@@ -67,16 +67,20 @@ function string(arg,arg1){
 //.........................object creation ...................................
 
 /*way-1:-*/
-let object_crete1={}//object literal
-string("object_create1",object_crete1);//{}
+let object_create1={}//object literal
+string("object_create1",object_create1);//{}
+// object_create ={name:"suresh",age:25};//add the values
+// console.log(object_create)
 /*Note:-[object Object] is a string version of an object instance creation*/
 
 /*way-2*/
 let object_crete2=new Object();//object constructor
 string("object_create2",object_crete2);//{}
+// object_crete2.name="sai"
+// console.log(object_crete2)
 
 /* way-3 factory function*/
-//1way:-
+//1way:-(old way)
 function data(a,b,c){
     return{
         name:a,
@@ -86,27 +90,28 @@ function data(a,b,c){
 }
 let object=data("ramani",26,"female");
 string("factory_function1",object)//{name: 'venkat', age: 26, gender: 'male'}
-/*2way:-*/
+/*2way:-modern way*/
 function data1(a,b,c){
+    var d={name:"sai",age:24};
     return{
-       a,b,c
+       a,b,c,d
     }
 }
 let object1=data1("venkat",26,"male");
 string("factory_function2",object1)//{a: 'venkat', b: 26, c: 'male'}
 
 /*way-4 constructor function*/
-function object_create(arg1,arg2,arg3){
+function constructor_function(arg1,arg2,arg3){
     this.arg=arg1;
     this.arg1=arg2;
     this.gender=arg3
 
 }
-let obj=new object_create("suraya","100","male")
+let obj=new constructor_function("suraya","100","male")
 string("constructor_function",obj)//object_create {arg: 'suraya', arg1: '100', gender: 'male'}
 
 //---------------------------------------------------------------------------------
-//add the values
+/*add the values*/
 let add_values={
     first_name:"sai",
     age:24
@@ -127,5 +132,11 @@ console.log(add_values["first_name"]);//access
 add_values["first_name"]="prasad";//updating
 add_values["gender"]="male";//adding
 //---------------------------------------------------------------------------------
-
+/*add the anomonous_functions in object*/
+let person_details={};
+let details=function(){
+     console.log("satish");
+};
+person_details.details;
+string("add the func ===>in object",person_details)
 //---------------------------------------------------------------------------------
